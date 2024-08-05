@@ -173,7 +173,7 @@ All notable changes to this project will be documented in this file.
   Changed npm to yarn.
 - [#90](https://github.com/os2display/display-templates/pull/90)
   Updated react from 17 to 18.
-  Changed the rendering in index.js.
+  Changed the rendering in index.jsx.
   Moved some dependencies to dev-dependencies.
 - [#89](https://github.com/os2display/display-templates/pull/89)
   Reset slideshow on run.

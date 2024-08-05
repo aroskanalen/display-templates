@@ -20,10 +20,10 @@ import BookReview from "./book-review/book-review";
 import Calendar from "./calendar/calendar";
 import Contacts from "./contacts/contacts";
 import Poster from "./poster/poster";
-import RSS from "./rss/rss";
+import Rss from "./rss/rss.jsx";
 import Slideshow from "./slideshow/slideshow";
 import InstagramFeed from "./instagram-feed/instagram-feed";
-import IFrame from "./iframe/iframe";
+import Iframe from "./iframe/iframe";
 import Table from "./table/table";
 import Video from "./video/video";
 import Travel from "./travel/travel";
@@ -109,7 +109,7 @@ export const renderSlide = (slide) => {
       );
     case "iframe":
       return (
-        <IFrame
+        <Iframe
           content={slide.content}
           slide={slide}
           run="1234"
@@ -129,7 +129,7 @@ export const renderSlide = (slide) => {
       );
     case "rss":
       return (
-        <RSS
+        <Rss
           content={slide.content}
           slide={slide}
           run="1234"

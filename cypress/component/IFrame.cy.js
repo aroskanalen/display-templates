@@ -1,5 +1,5 @@
 import React from "react";
-import Iframe from "../../src/iframe/iframe";
+import Iframe from "../../src/iframe/iframe.jsx";
 
 describe("Iframe template", () => {
   it("Iframe basic", () => {

@@ -15,7 +15,7 @@ import "../global-styles.css";
  * @param {string} props.executionId Unique id for the instance.
  * @returns {JSX.Element} The component.
  */
-function IFrame({ slide, content, run, slideDone, executionId }) {
+function Iframe({ slide, content, run, slideDone, executionId }) {
   const { source, duration = 15000 } = content;
 
   /** Setup slide run function. */
@@ -46,7 +46,7 @@ function IFrame({ slide, content, run, slideDone, executionId }) {
   );
 }
 
-IFrame.propTypes = {
+Iframe.propTypes = {
   run: PropTypes.string.isRequired,
   slideDone: PropTypes.func.isRequired,
   slide: PropTypes.shape({
@@ -62,4 +62,4 @@ IFrame.propTypes = {
   executionId: PropTypes.string.isRequired,
 };
 
-export default IFrame;
+export default Iframe;

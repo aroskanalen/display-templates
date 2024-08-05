@@ -18,7 +18,7 @@ import GlobalStyles from "../GlobalStyles";
  * @param {string} props.executionId Unique id for the instance.
  * @returns {JSX.Element} The component.
  */
-function RSS({ slide, content, run, slideDone, executionId }) {
+function Rss({ slide, content, run, slideDone, executionId }) {
   const [entryIndex, setEntryIndex] = useState(0);
   const [currentEntry, setCurrentEntry] = useState(null);
   const timeoutRef = useRef(null);
@@ -199,7 +199,7 @@ const Description = styled.p`
   }
 `;
 
-RSS.defaultProps = {
+Rss.defaultProps = {
   slide: {
     feed: {
       configuration: {},
@@ -208,7 +208,7 @@ RSS.defaultProps = {
   },
 };
 
-RSS.propTypes = {
+Rss.propTypes = {
   run: PropTypes.string.isRequired,
   slideDone: PropTypes.func.isRequired,
   slide: PropTypes.shape({
@@ -244,4 +244,4 @@ RSS.propTypes = {
   executionId: PropTypes.string.isRequired,
 };
 
-export default RSS;
+export default Rss;

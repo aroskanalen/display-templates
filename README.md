@@ -6,7 +6,7 @@ See [https://github.com/os2display/display-docs/blob/main/templates.md](https://
 ## Develop
 
 To enable easy development of templates, the supplied docker-compose setup serves a page where the
-slides in `src/slides.js` are displayed as a list of templates that can be open. The slides file contains
+slides in `src/slides.jsx` are displayed as a list of templates that can be open. The slides file contains
 example content for the different templates.
 
 `index.html` serves a local setup for working with the templates.
@@ -30,7 +30,7 @@ To add a template:
   * `my-template-content-example.json` - An example content.
   * `my-template-schema.json` - Json Schema description of the content for the slide.
 
-Also add one or more entries to `src/slides.js` with examples of the data required for the template.
+Also add one or more entries to `src/slides.jsx` with examples of the data required for the template.
 
 To compile the template it is necessary to add it to the webpack setup.
 

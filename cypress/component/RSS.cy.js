@@ -1,6 +1,6 @@
 import React from "react";
 import dayjs from "dayjs";
-import RSS from "../../src/rss/rss";
+import Rss from "../../src/rss/rss.jsx";
 
 describe("RSS", () => {
   it("Box top, theme blue", () => {
@@ -12,7 +12,7 @@ describe("RSS", () => {
     cy.stub(mock, "slideDone").as("slideDoneStub");
     cy.mount(
       <div className="slide" id="SLIDE_ID">
-        <RSS
+        <Rss
           slide={{
             id: "slide4-rss",
             type: "rss",
